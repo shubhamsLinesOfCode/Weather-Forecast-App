@@ -66,7 +66,8 @@ function updateRecentSearchesDropdown() {
     element.addEventListener("click", () => {
       checkWeather(element.textContent.trim());
       recentSearchesDropdown.classList.add("hidden");
-      searchBox.value = element.textContent.trim();
+      //searchBox.value = element.textContent.trim();
+      searchBox.value = "";
     });
   });
 }
@@ -255,6 +256,7 @@ async function checkWeather(city) {
 searchBtn.addEventListener("click", () => {
   if (searchBox.value.trim() !== "") {
     checkWeather(searchBox.value);
+    searchBox.value = "";
   }
 });
 
