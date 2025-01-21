@@ -10,7 +10,7 @@ weatherSection.classList.add("min-h-[375px]"); // Adjust 400px to your desired h
 const recentSearchesDropdown = document.getElementById("recentSearches");
 
 // Maximum number of recent searches to store
-const MAX_RECENT_SEARCHES = 5;
+const MAX_RECENT_SEARCHES = 10;
 
 // Function to format date
 function formatDate(dt) {
